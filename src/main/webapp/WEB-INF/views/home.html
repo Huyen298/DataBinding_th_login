@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Login Page</h1>
+<form th:object="${login}" method="post" th:action="@{/login}">
+    <input th:field="*{account}" placeholder="account">
+    <input th:field="*{password}" placeholder="password">
+    <br>
+    <button type="submit">Login</button>
+</form>
+</body>
+</html>
